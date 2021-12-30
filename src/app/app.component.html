@@ -19,18 +19,18 @@
                     </ng-select>
 
                     <select class='button-33' name="genData" id="slGenData" >
-                        <option value="order">order</option>
                         <option value="random">random</option>
+                        <option value="order">order</option>
                     </select>
                     <select class='button-33' name="isUseVoice" id="slIsUseVoice" >
+                        <option value={{IND_SPEAK_NOTI_ENG}}>Noti Eng</option>
                         <option value={{IND_SPEAK_NO_NOTI_ENG}}>Notify Eng - Voice</option>
                         <option value={{IND_SPEAK_NOTI_VOICE}}>Notify - Voice</option>
                         <option value={{IND_SPEAK_NO_VOICE}}>Notify</option>
                         <option value={{IND_SPEAK_NO_NOTI}}>Voice</option>
                         <option value={{IND_SPEAK_ALL_ENG}}>Notify Eng - Voice Eng</option>
-                        <option value={{IND_SPEAK_NOTI_NO_VIE}}>notify - Voice Eng</option>
+                        <option value={{IND_SPEAK_NOTI_NO_VIE}}>Notify - Voice Eng</option>
                         <option value={{IND_SPEAK_NO_NOTI_NO_VIE}}>Voice Eng</option>
-                        <option value={{IND_SPEAK_NOTI_ENG}}>noti Eng</option>
                     </select>
 
                     <div id='sound-control'>
@@ -62,6 +62,8 @@
                     (change)="onChangeValueTime(valueTime)" />
                 <input class='button-59' type="submit" id='isNotify' value={{isNotify}} /><br />
             </div>
+            <textarea id="strCookie"  [(ngModel)]="strCookieContinue" ></textarea>
         </div>
+
        <mat-icon aria-hidden="false" aria-label="icon" (click)="onHideControl()">home</mat-icon>
     </div> 

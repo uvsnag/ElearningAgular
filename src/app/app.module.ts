@@ -13,6 +13,7 @@ import { NgSelectModule } from '@ng-select/ng-select';
 import { FormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { CookieService } from 'ngx-cookie-service';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
       provide: API_KEY,
       useValue: environment.googleSheetsApiKey,
     },
-    GoogleSheetsDbService
+    GoogleSheetsDbService,
+    CookieService 
   ],
   bootstrap: [AppComponent]
 })
