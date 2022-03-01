@@ -22,6 +22,7 @@ export class AppComponent implements OnInit, OnChanges {
   strSheet = this.sheetArr[0];
 
   strEnglish = "";
+  strVie = "";
 
   strCookieContinue = ""
 
@@ -170,6 +171,7 @@ export class AppComponent implements OnInit, OnChanges {
           var strEngVie = engStr + ' ' + this.SPLIT_WORD + ' ' + viStr
 
           this.strEnglish = engStr;
+          this.strVie = viStr;
 
           switch (typeSpeak) {
             case this.IND_SPEAK_NO_NOTI_ENG:
